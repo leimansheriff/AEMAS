@@ -1,0 +1,65 @@
+Command: ninja all
+[1/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/AEMAS.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/AEMAS.c.obj 
+/home/leiman/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v6.0\" -DREMOTE_WAKE_HAL_SUPPORTED -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/leiman/esp/AEMAS/build/config -I/home/leiman/esp/AEMAS/main -I/home/leiman/esp/AEMAS/main/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_libc/platform_include -I/home/leiman/.espressif/v6.0/esp-idf/components/freertos/config/include -I/home/leiman/.espressif/v6.0/esp-idf/components/freertos/config/include/freertos -I/home/leiman/.espressif/v6.0/esp-idf/components/freertos/config/xtensa/include -I/home/leiman/.espressif/v6.0/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/leiman/.espressif/v6.0/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/leiman/.espressif/v6.0/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/leiman/.espressif/v6.0/esp-idf/components/freertos/esp_additions/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hw_support/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hw_support/include/soc -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hw_support/ldo/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hw_support/debug_probe/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hw_support/etm/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hw_support/power_supply/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hw_support/modem/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hw_support/port/esp32s3/. -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hw_support/port/esp32s3/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/. -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/include -I/home/leiman/.espressif/v6.0/esp-idf/components/heap/include -I/home/leiman/.espressif/v6.0/esp-idf/components/heap/tlsf -I/home/leiman/.espressif/v6.0/esp-idf/components/log/include -I/home/leiman/.espressif/v6.0/esp-idf/components/soc/include -I/home/leiman/.espressif/v6.0/esp-idf/components/soc/esp32s3 -I/home/leiman/.espressif/v6.0/esp-idf/components/soc/esp32s3/include -I/home/leiman/.espressif/v6.0/esp-idf/components/soc/esp32s3/register -I/home/leiman/.espressif/v6.0/esp-idf/components/hal/platform_port/include -I/home/leiman/.espressif/v6.0/esp-idf/components/hal/esp32s3/include -I/home/leiman/.espressif/v6.0/esp-idf/components/hal/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_rom/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_rom/esp32s3/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_rom/esp32s3/include/esp32s3 -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_rom/esp32s3 -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_common/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_system/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_system/port/soc -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_system/port/include/private -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_stdio/include -I/home/leiman/.espressif/v6.0/esp-idf/components/xtensa/esp32s3/include -I/home/leiman/.espressif/v6.0/esp-idf/components/xtensa/include -I/home/leiman/.espressif/v6.0/esp-idf/components/xtensa/deprecated_include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hal_gpio/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hal_gpio/esp32s3/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hal_usb/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hal_usb/esp32s3/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hal_pmu/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hal_pmu/esp32s3/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hal_ana_conv/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hal_ana_conv/esp32s3/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hal_dma/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hal_dma/esp32s3/include -I/home/leiman/.espressif/v6.0/esp-idf/components/lwip/include -I/home/leiman/.espressif/v6.0/esp-idf/components/lwip/include/apps -I/home/leiman/.espressif/v6.0/esp-idf/components/lwip/lwip/src/include -I/home/leiman/.espressif/v6.0/esp-idf/components/lwip/port/include -I/home/leiman/.espressif/v6.0/esp-idf/components/lwip/port/freertos/include -I/home/leiman/.espressif/v6.0/esp-idf/components/lwip/port/esp32xx/include -I/home/leiman/.espressif/v6.0/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/leiman/.espressif/v6.0/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_driver_gpio/include -I/home/leiman/esp/AEMAS/components/mk3/include -I/home/leiman/esp/AEMAS/components/led/include -I/home/leiman/esp/AEMAS/managed_components/espressif__led_strip/include -I/home/leiman/esp/AEMAS/managed_components/espressif__led_strip/interface -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_driver_rmt/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hal_rmt/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hal_rmt/esp32s3/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_driver_spi/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_pm/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hal_gpspi/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_hal_gpspi/esp32s3/include -I/home/leiman/.espressif/v6.0/esp-idf/components/esp_driver_dma/include -I/home/leiman/esp/AEMAS/components/usbconf/include -I/home/leiman/esp/AEMAS/managed_components/espressif__usb/include -I/home/leiman/esp/AEMAS/managed_components/espressif__usb_host_cdc_acm/include -I/home/leiman/esp/AEMAS/managed_components/espressif__usb_host_cdc_acm/interface @"/home/leiman/esp/AEMAS/build/toolchain/cflags" -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/leiman/esp/AEMAS=. -fmacro-prefix-map=/home/leiman/.espressif/v6.0/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu23 -Wno-old-style-declaration -fzero-init-padding-bits=all -fno-malloc-dce -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/AEMAS.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/AEMAS.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/AEMAS.c.obj -c /home/leiman/esp/AEMAS/main/AEMAS.c
+In file included from /home/leiman/esp/AEMAS/main/AEMAS.c:15:
+/home/leiman/esp/AEMAS/main/include/aemas.h:18:1: error: data definition has no type or storage class [-Werror]
+   18 | gpio_reset_pin(BUTTON);
+      | ^~~~~~~~~~~~~~
+/home/leiman/esp/AEMAS/main/include/aemas.h:18:1: error: type defaults to 'int' in declaration of 'gpio_reset_pin' [-Wimplicit-int]
+/home/leiman/esp/AEMAS/main/include/aemas.h:18:1: error: parameter names (without types) in function declaration [-Wdeclaration-missing-parameter-type]
+/home/leiman/esp/AEMAS/main/include/aemas.h:19:1: error: data definition has no type or storage class [-Werror]
+   19 | gpio_set_direction(BUTTON, GPIO_MODE_INPUT);
+      | ^~~~~~~~~~~~~~~~~~
+/home/leiman/esp/AEMAS/main/include/aemas.h:19:1: error: type defaults to 'int' in declaration of 'gpio_set_direction' [-Wimplicit-int]
+/home/leiman/esp/AEMAS/main/include/aemas.h:19:1: error: parameter names (without types) in function declaration [-Wdeclaration-missing-parameter-type]
+/home/leiman/esp/AEMAS/main/include/aemas.h:20:1: error: data definition has no type or storage class [-Werror]
+   20 | gpio_set_pull_mode(BUTTON, GPIO_PULLUP_ONLY);
+      | ^~~~~~~~~~~~~~~~~~
+/home/leiman/esp/AEMAS/main/include/aemas.h:20:1: error: type defaults to 'int' in declaration of 'gpio_set_pull_mode' [-Wimplicit-int]
+/home/leiman/esp/AEMAS/main/include/aemas.h:20:1: error: parameter names (without types) in function declaration [-Wdeclaration-missing-parameter-type]
+/home/leiman/esp/AEMAS/main/include/aemas.h:22:1: error: data definition has no type or storage class [-Werror]
+   22 | gpio_reset_pin(RELAY_1);
+      | ^~~~~~~~~~~~~~
+/home/leiman/esp/AEMAS/main/include/aemas.h:22:1: error: type defaults to 'int' in declaration of 'gpio_reset_pin' [-Wimplicit-int]
+/home/leiman/esp/AEMAS/main/include/aemas.h:22:1: error: parameter names (without types) in function declaration [-Wdeclaration-missing-parameter-type]
+/home/leiman/esp/AEMAS/main/include/aemas.h:23:1: error: data definition has no type or storage class [-Werror]
+   23 | gpio_reset_pin(RELAY_2);
+      | ^~~~~~~~~~~~~~
+/home/leiman/esp/AEMAS/main/include/aemas.h:23:1: error: type defaults to 'int' in declaration of 'gpio_reset_pin' [-Wimplicit-int]
+/home/leiman/esp/AEMAS/main/include/aemas.h:23:1: error: parameter names (without types) in function declaration [-Wdeclaration-missing-parameter-type]
+/home/leiman/esp/AEMAS/main/include/aemas.h:24:1: error: data definition has no type or storage class [-Werror]
+   24 | gpio_reset_pin(RELAY_3);
+      | ^~~~~~~~~~~~~~
+/home/leiman/esp/AEMAS/main/include/aemas.h:24:1: error: type defaults to 'int' in declaration of 'gpio_reset_pin' [-Wimplicit-int]
+/home/leiman/esp/AEMAS/main/include/aemas.h:24:1: error: parameter names (without types) in function declaration [-Wdeclaration-missing-parameter-type]
+/home/leiman/esp/AEMAS/main/include/aemas.h:25:1: error: data definition has no type or storage class [-Werror]
+   25 | gpio_reset_pin(RELAY_4);
+      | ^~~~~~~~~~~~~~
+/home/leiman/esp/AEMAS/main/include/aemas.h:25:1: error: type defaults to 'int' in declaration of 'gpio_reset_pin' [-Wimplicit-int]
+/home/leiman/esp/AEMAS/main/include/aemas.h:25:1: error: parameter names (without types) in function declaration [-Wdeclaration-missing-parameter-type]
+/home/leiman/esp/AEMAS/main/include/aemas.h:27:1: error: data definition has no type or storage class [-Werror]
+   27 | gpio_set_direction(RELAY_1, GPIO_MODE_INPUT);
+      | ^~~~~~~~~~~~~~~~~~
+/home/leiman/esp/AEMAS/main/include/aemas.h:27:1: error: type defaults to 'int' in declaration of 'gpio_set_direction' [-Wimplicit-int]
+/home/leiman/esp/AEMAS/main/include/aemas.h:27:1: error: parameter names (without types) in function declaration [-Wdeclaration-missing-parameter-type]
+/home/leiman/esp/AEMAS/main/include/aemas.h:28:1: error: data definition has no type or storage class [-Werror]
+   28 | gpio_set_direction(RELAY_2, GPIO_MODE_INPUT);
+      | ^~~~~~~~~~~~~~~~~~
+/home/leiman/esp/AEMAS/main/include/aemas.h:28:1: error: type defaults to 'int' in declaration of 'gpio_set_direction' [-Wimplicit-int]
+/home/leiman/esp/AEMAS/main/include/aemas.h:28:1: error: parameter names (without types) in function declaration [-Wdeclaration-missing-parameter-type]
+/home/leiman/esp/AEMAS/main/include/aemas.h:29:1: error: data definition has no type or storage class [-Werror]
+   29 | gpio_set_direction(RELAY_3, GPIO_MODE_INPUT);
+      | ^~~~~~~~~~~~~~~~~~
+/home/leiman/esp/AEMAS/main/include/aemas.h:29:1: error: type defaults to 'int' in declaration of 'gpio_set_direction' [-Wimplicit-int]
+/home/leiman/esp/AEMAS/main/include/aemas.h:29:1: error: parameter names (without types) in function declaration [-Wdeclaration-missing-parameter-type]
+/home/leiman/esp/AEMAS/main/include/aemas.h:30:1: error: data definition has no type or storage class [-Werror]
+   30 | gpio_set_direction(RELAY_4, GPIO_MODE_INPUT);
+      | ^~~~~~~~~~~~~~~~~~
+/home/leiman/esp/AEMAS/main/include/aemas.h:30:1: error: type defaults to 'int' in declaration of 'gpio_set_direction' [-Wimplicit-int]
+/home/leiman/esp/AEMAS/main/include/aemas.h:30:1: error: parameter names (without types) in function declaration [-Wdeclaration-missing-parameter-type]
+cc1: all warnings being treated as errors
+[2/9] Performing build step for 'bootloader'
+[1/1] cd /home/leiman/esp/AEMAS/build/bootloader && /home/leiman/.espressif/tools/python/662a3be/venv/bin/python /home/leiman/.espressif/v6.0/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/leiman/esp/AEMAS/build/bootloader/bootloader.bin
+Bootloader binary size 0x5240 bytes. 0x2dc0 bytes (36%) free.
+ninja: build stopped: subcommand failed.

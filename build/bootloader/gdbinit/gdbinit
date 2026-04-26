@@ -1,0 +1,2 @@
+source /home/leiman/esp/AEMAS/build/bootloader/gdbinit/symbols
+source /home/leiman/esp/AEMAS/build/bootloader/gdbinit/connect
