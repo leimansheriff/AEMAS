@@ -6,7 +6,7 @@
 #include "mk3.h"
 #include "usb/cdc_host_types.h"
 #define VID (0x0403)
-#define PID (0x6001)
+#define PID (0x6015)
 
 typedef struct {
 	uint8_t command;

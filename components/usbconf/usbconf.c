@@ -45,7 +45,12 @@ void send_request(msg_rqst_t *data)
 	{
 		victron_request(&aems_request[i], tx_buffer); // why does aems_request[] have & and tx_buffer does not ? Becuase is an array of srtucts and we need access to particular elements of the array not the entire array 
 		size_t total_len = tx_buffer[0] + 2;
-		cdc_acm_host_data_tx_blocking(cdc_dev_hdl, tx_buffer, total_len, 1000);
+		ESP_ERROR_CHECK(cdc_acm_host_data_tx_blocking(cdc_dev_hdl, tx_buffer, total_len, 1000));
+		esp_err_t error = cdc_acm_host_data_tx_blocking(cdc_dev_hdl, tx_buffer, total_len, 1000);
+		ESP_LOGI(TAG, "CDC device connected");
+		if (error != ESP_OK) {
+			ESP_LOGE(TAG, "CDC device failed");
+		}
 		vTaskDelay(pdMS_TO_TICKS(100));
 	}
 }

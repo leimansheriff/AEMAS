@@ -1,8 +1,0 @@
-Command: cmake -G Ninja -B /home/leiman/esp/AEMAS/main/build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/leiman/.espressif/tools/python/662a3be/venv/bin/python -DESP_PLATFORM=1 -DCCACHE_ENABLE=False /home/leiman/esp/AEMAS/main
--- The C compiler identification is unknown
--- The CXX compiler identification is unknown
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - failed
--- Check for working C compiler: /usr/bin/cc
--- Check for working C compiler: /usr/bin/cc - broken
--- Configuring incomplete, errors occurred!
