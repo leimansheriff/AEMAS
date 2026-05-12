@@ -31,7 +31,7 @@ httpd_uri_t root_uri = {
 esp_err_t status_get_handler(httpd_req_t *req) {
 	sys_info_t *victron = (sys_info_t *) req->user_ctx;
 	char json_response[100];
-	snprintf(json_response, sizeof(json_response), "{\"voltage\": %.1f, \"current\": %.1f }", victron->voltage, victron->current);
+	snprintf(json_response, sizeof(json_response), "{\"voltage\": %.1f, \"soc\": %.1f, \"power\": %.1f}", victron->voltage, victron->soc, victron->power_out);
 	httpd_resp_set_type(req, "application/json");
 	httpd_resp_send(req, json_response, HTTPD_RESP_USE_STRLEN);
 	return ESP_OK;

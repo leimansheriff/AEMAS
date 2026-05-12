@@ -77,7 +77,8 @@
                 </div>
                 <div class="telemetry-item">
                     <div class="value" id="val-soc">--</div>
-                    <div class="label">SOC (%)</div> </div>
+                    <div class="label">Current (A)</div>
+                </div>
                 <div class="telemetry-item">
                     <div class="value" id="val-power">----</div>
                     <div class="label">Power (W)</div>
@@ -159,8 +160,7 @@
                 if (res.ok) {
                     const data = await res.json();
                     document.getElementById('val-voltage').innerText = data.voltage.toFixed(1);
-                    // UPDATED TO FETCH SOC:
-                    document.getElementById('val-soc').innerText = data.soc; 
+                    document.getElementById('val-soc').innerText = data.soc.toFixed(1);
                     document.getElementById('val-power').innerText = data.power;
                 }
             } catch (err) {

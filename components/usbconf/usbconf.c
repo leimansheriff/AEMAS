@@ -110,7 +110,7 @@ esp_err_t usbconf(sys_info_t *info)
 	if (err == ESP_OK && cdc_dev_hdl != NULL) {
 		ESP_LOGI(TAG, "MK3 connected MK3 ID: 0x%04X:0x%04X", VID, PID);
 		cdc_acm_line_coding_t line_coding = {
-			.dwDTERate = 115200,
+			.dwDTERate = 2400,
 			.bCharFormat = 0,
 			.bParityType = 0,
 			.bDataBits = 8

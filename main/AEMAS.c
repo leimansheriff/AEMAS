@@ -34,7 +34,7 @@ void app_main(void)
 			case INIT:
 				esp_err_t condition = usbconf(&info);
 				if (condition == ESP_OK) {
-					ESP_LOGI(TAG, "Battery: %f\n Current: %f", info.voltage, info.current);
+					ESP_LOGI(TAG, "Battery: %f\n Current: %f Soc: %f, power_out: %f", info.voltage, info.current, info.soc, info.power_out);
 					current_state = NORMAL;
 					ESP_LOGI(TAG, "Switching state to normal");
 				}

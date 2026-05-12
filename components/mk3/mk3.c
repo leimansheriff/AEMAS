@@ -3,6 +3,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include "esp_log.h"
+#include "esp_log_buffer.h"
 #include "include/mk3.h"
 
 static const char *TAG = "MK3";
@@ -11,6 +12,9 @@ void victron_parser(const uint8_t *buffer, size_t data_len, void *arg)
 {
 	sys_info_t *sys_info = (sys_info_t *)arg; // why not use this casting in the function directly 
 	uint8_t checksum = 0;
+	ESP_LOGI(TAG, "bytes received: %d", data_len);
+	ESP_LOG_BUFFER_HEXDUMP(TAG, buffer, data_len, 1);
+	ESP_LOG_BUFFER_HEX(TAG, buffer, data_len);
 	if (data_len < 12) {
 		return;
 	}
