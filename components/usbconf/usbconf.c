@@ -20,11 +20,9 @@ static const char *TAG = "USB";
 cdc_acm_dev_hdl_t cdc_dev_hdl = NULL;
 int current_idx = -1;
 msg_rqst_t aems_request[] = {
-	{.command = 0x70, .data = {0x00}, .data_len = 1, .label = "DC_INFO"},
-	{.command = 0x57, .data = {0x30, 0x0D, 0x00}, .data_len = 3, .label = "SOC"},
-	{.command = 0x57, .data = {0x30, 0x10, 0x00}, .data_len = 3, .label = "power_out"}
+    {.command = 0x46, .data = {0x00}, .data_len = 1, .label = "DC_INFO"},
+    {.command = 0x46, .data = {0x01}, .data_len = 1, .label = "AC_INFO"}
 };
-
 void victron_request(msg_rqst_t *data, uint8_t *frame)
 {
 	uint8_t checksum = 0;
@@ -47,7 +45,7 @@ void victron_request(msg_rqst_t *data, uint8_t *frame)
 void send_request(void)
 {
 	uint8_t tx_buffer[32];
-	for (int i = 0; i < 3; i++)
+	for (int i = 0; i < 2; i++)
 	{
 		current_idx = i;
 		victron_request(&aems_request[i], tx_buffer); // why does aems_request[] have & and tx_buffer does not ? Becuase is an array of srtucts and we need access to particular elements of the array not the entire array 
